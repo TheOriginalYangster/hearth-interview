@@ -24,4 +24,4 @@ The property data is searched using [fuzzy-search](https://www.npmjs.com/package
 Simple approach was taken for the display.  Here are the wireframe mock ups:
 
 ![wireframe_landing](https://i.imgur.com/ESwVgu2.jpg)
-![wireframe_results](https://imgur.com/a/9z4dP4i.jpg)
+![wireframe_results](https://i.imgur.com/wXls9Hj.jpeg)
