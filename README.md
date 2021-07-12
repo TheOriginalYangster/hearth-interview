@@ -30,4 +30,4 @@ The CSV files did not contain any image links, so four photos used as placeholde
 
 React-Router would have been a good option for the landing/results page, but conditional renders were used for simplicity.
 
-Styling is built using SASS/SCSS.
+Styling is built using SASS/SCSS.  The color palette works but could be better!
