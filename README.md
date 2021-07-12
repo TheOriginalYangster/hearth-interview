@@ -15,7 +15,7 @@
 
 ### Back-End First
 
-Before any front-end could be covered, the data needed to be sorted-out.  CSV is parsed with [csv-parser](https://www.npmjs.com/package/csv-parser) and the data is stored in memory on the server.
+Before any front-end could be covered, the data needed to be sorted out.  CSV is parsed with [csv-parser](https://www.npmjs.com/package/csv-parser) and the data is stored in memory on the server.
 
 The property data is searched using [fuzzy-search](https://www.npmjs.com/package/fuzzy-search).
 
