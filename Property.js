@@ -1,19 +1,20 @@
+// Currency Formatter
+const USD = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+})
+
 class Property {
   
   constructor() {
-    // Currency formatter
-    const USD = new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD',
-    })
     // We can un-comment data if needed later
     this.economics = {
-      // saleType: arguments[0],
-      // soldDate: arguments[1],
       price: USD.format(arguments[7]).slice(0, -3),
       daysOnMarket: arguments[14],
-      // hoaCost: arguments[16],
       dsqft: arguments[15],
+      // saleType: arguments[0],
+      // soldDate: arguments[1],
+      // hoaCost: arguments[16],
     }
     this.location = {
       address: arguments[3],
@@ -34,13 +35,20 @@ class Property {
     }
     this.misc = {
       status: arguments[17],
-      // openHouseStart: arguments[18],
-      // openHouseEnd: arguments[19],
       url: arguments[20],
       source: arguments[21],
       mlsNumber: arguments[22],
+      // openHouseStart: arguments[18],
+      // openHouseEnd: arguments[19],
     }
+
+    // Placeholder for img index
+    this.i = null
   }
+
+  setImg(i) {
+    this.i = i
+  } 
 }
 
 module.exports = Property

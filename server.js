@@ -12,7 +12,7 @@ const AddressSearcher = new FuzzySearch(properties, ['location.address'])
 
 app.get('/search', (req, res) => {
   const { q } = req.query
-  // console.log('q', q)
+
   try {
     const searchResults = AddressSearcher.search(q)
     res.status(200).send(searchResults)
@@ -21,15 +21,11 @@ app.get('/search', (req, res) => {
     console.log(error)
     res.status(500).send(error)
   }
-
 })
 
 app.listen(port, () => {
 
-  /*
-      On server start: parse and store CSV in memory.
-      This is unideal but larger applications wouldn't store searchable data in CSV format.
-  */
+  // On server start: parse and store CSV in memory.
 
   const inputStream = fs.createReadStream('houses.csv', 'utf8')
   let headers = true

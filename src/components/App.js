@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import Landing from './layout/Landing'
 import Main from './layout/Main'
@@ -10,26 +10,21 @@ function App() {
   const [searchText, setSearchText] = useState('')
   const [results, setResults] = useState(null)
 
-  // Query unsplash API for stock home images.
-  useEffect(() => {
-
-  }, [])
-
+  // Gets search results from server
   const findSearch = (q) => {
 
     if(q === '') return
-
     const url = `/search?q=${q}`
 
     fetch(url)
       .then(res => res.json())
-      // .then(data => {
-      //   console.log(data)
-      //   return data
-      // })
+      .then(data => {
+        // Add indexes to properties (for images)
+        data.forEach((x, i) => x.i = i)
+        return data
+      })
       .then(data => setResults(data))
       .catch(console.log)
-
   }
 
   const showMain = results !== null
