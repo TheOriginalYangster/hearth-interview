@@ -28,6 +28,6 @@ Simple approach was taken for the display.  Here are the wireframe mock ups:
 
 The CSV files did not contain any image links, so four photos used as placeholders for the wireframe.  An external API for stock images was considered but workarounds for API call limits would have lead to a rabbit hole.
 
-React-Router was also considered for the 'landing' and 'results' page, but a conditional render was used.
+React-Router would have been a good option for the landing/results page, but used conditional renders were used for simplicity.
 
 Styling is built using SASS/SCSS.
