@@ -6,5 +6,7 @@
 3) Run the commands
 
 `npm install`
+
 `npm run start:server`
+
 `npm run start:client`
