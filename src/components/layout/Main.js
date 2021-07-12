@@ -41,7 +41,7 @@ export default function Main(props) {
           findSearch={findSearch}
         />
       </div>
-      <div classname={displayClass}>
+      <div className={displayClass}>
         <Display
           selected={selected}
         />

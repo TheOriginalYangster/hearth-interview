@@ -4,8 +4,7 @@
   display: grid;
   width: 100%;
   grid-template-rows: 120px auto;
-  grid-template-columns: auto minmax(700px, 30vw);
-  overflow: hidden;
+  grid-template-columns: auto 20em;
 
   &__header {
     // External grid properties
@@ -25,6 +24,7 @@
       color: $primary;
     }
   }
+
 }
 
 .no-results{

@@ -7,7 +7,7 @@
   font-size: calc(10px + 2vmin);
   color: $secondary;
   padding: 0 2vw;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .App-logo {
@@ -25,18 +25,7 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 // Hotfix for SearchBar css
 .MuiInputBase-root {
-  bottom: 9px;
+  bottom: 0.4vmin;
 }
-
-//
