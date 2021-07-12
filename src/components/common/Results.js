@@ -12,7 +12,6 @@ import h7 from '../../static/house7.jpeg'
 
 // Array of stock house photos
 const h = [h1, h2, h3, h4, h5, h6, h7]
-const l = h.length
 
 export default function Results({ results, setSelected }) {
 
@@ -38,10 +37,12 @@ function Result({ property, setSelected }) {
 
   // Makes this property selected when clicked
   const onClick = () => setSelected(property)
+  
+  const img = h[i % h.length]
 
   return (
     <div className={'result'} onClick={onClick}>
-      <img className={'result__img'} src={h[i % l]} alt="property_image"/>
+      <img className={'result__img'} src={img} alt="property_image"/>
       <div className={'result__info'}>
         <p><b>{economics.price}</b></p>
         <p>{`${location.address} ${location.city} ${location.state}`}</p>

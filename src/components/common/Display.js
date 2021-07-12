@@ -15,7 +15,6 @@ const infoClass = `${baseClass}__info`
 
 // Array of stock house photos
 const h = [h1, h2, h3, h4, h5, h6, h7]
-const l = h.length
 
 export default function Display({ selected }) {
 
@@ -26,7 +25,7 @@ export default function Display({ selected }) {
   } else {
     
     const { economics, location, homeInfo, misc, i } = selected
-    const img = h[i % l]
+    const img = h[i % h.length]
 
     return (
       <div className={baseClass}>
