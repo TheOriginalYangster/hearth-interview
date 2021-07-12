@@ -1,0 +1,33 @@
+// Single Result
+.result {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.72em;
+  padding: 20px;
+  margin: 10px;
+  background-color: #bdcef0;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: -1px 0px 15px -4px rgba(0,0,0,0.51);
+
+  img {
+    width: 150px !important;
+    height: 150px;
+  }
+
+  &__info {
+    text-align: left;
+    padding-left: 10px;
+    p {
+      margin: 0 0 0.1em 0;
+    }
+  }
+}
+
+.results {
+  max-height: 100vh;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,17 @@
+@import "src/styles/_colors.scss";
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30vh 20vw;
+  
+  h1 {
+    margin-bottom: 15px;
+    color: $primary;
+  }
+
+  p {
+    color: $secondary;
+  }
+}

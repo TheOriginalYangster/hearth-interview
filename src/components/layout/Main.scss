@@ -1,0 +1,44 @@
+@import "src/styles/_colors.scss";
+
+.main {
+  display: grid;
+  width: 100%;
+  grid-template-rows: 120px auto;
+  grid-template-columns: auto minmax(700px, 30vw);
+  overflow: hidden;
+
+  &__header {
+    // External grid properties
+    grid-column: span 2;
+
+    // Internal grid properties
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    padding-top: 22px;
+
+    h3 {
+      position: relative;
+      top: -5px;
+      margin: 0 0;
+      text-align: left;
+      cursor: pointer;
+      color: $primary;
+    }
+  }
+
+  &__display {
+    
+  }
+
+  &__results {
+    
+  }
+}
+
+.no-results{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}

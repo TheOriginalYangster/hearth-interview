@@ -1,11 +1,18 @@
 class Property {
-  constructor() { 
+  
+  constructor() {
+    // Currency formatter
+    const USD = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+    })
+    // We can un-comment data if needed later
     this.economics = {
-      saleType: arguments[0],
-      soldDate: arguments[1],
-      price: arguments[7],
+      // saleType: arguments[0],
+      // soldDate: arguments[1],
+      price: USD.format(arguments[7]).slice(0, -3),
       daysOnMarket: arguments[14],
-      hoaCost: arguments[16],
+      // hoaCost: arguments[16],
       dsqft: arguments[15],
     }
     this.location = {
@@ -13,9 +20,9 @@ class Property {
       city: arguments[4],
       state: arguments[5],
       zip: arguments[6],
-      location: arguments [10],
-      lat: arguments[25],
-      long: arguments[26],
+      // location: arguments [10],
+      // lat: arguments[25],
+      // long: arguments[26],
     }
     this.homeInfo = {
       propertyType: arguments[2],
@@ -27,8 +34,8 @@ class Property {
     }
     this.misc = {
       status: arguments[17],
-      openHouseStart: arguments[18],
-      openHouseEnd: arguments[19],
+      // openHouseStart: arguments[18],
+      // openHouseEnd: arguments[19],
       url: arguments[20],
       source: arguments[21],
       mlsNumber: arguments[22],
